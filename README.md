@@ -21,6 +21,7 @@ Each table shows the gas cost (second column) to generate a gene with X chromoss
 #### Using 10 variants for each trait
 
 | Chromossomes | gas |
+| - | - |
 | 01 | 1058 |
 | 02 | 1793 |
 | 03 | 2461 |
@@ -57,6 +58,7 @@ Each table shows the gas cost (second column) to generate a gene with X chromoss
 #### Using 20 variants for each trait
 
 | Chromossomes | gas |
+| - | - |
 | 01 | 1484 |
 | 02 | 2520 |
 | 03 | 3630 |
@@ -93,6 +95,7 @@ Each table shows the gas cost (second column) to generate a gene with X chromoss
 #### Using 30 variants for each trait
 
 | Chromossomes | gas |
+| - | - |
 | 01 | 1783 |
 | 02 | 3235 |
 | 03 | 4681 |
@@ -129,6 +132,7 @@ Each table shows the gas cost (second column) to generate a gene with X chromoss
 #### Using 40 variants for each trait
 
 | Chromossomes | gas |
+| - | - |
 | 01 | 2207 |
 | 02 | 4029 |
 | 03 | 5942 |
@@ -165,6 +169,7 @@ Each table shows the gas cost (second column) to generate a gene with X chromoss
 #### Using 50 variants for each trait
 
 | Chromossomes | gas |
+| - | - |
 | 01 | 2574 |
 | 02 | 4822 |
 | 03 | 7132 |
