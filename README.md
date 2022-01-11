@@ -1,12 +1,69 @@
 # Solidity Genetics Benchmark
 
-In the examples here, a gene is an `uint256`, and every chromossome is a `byte` of that `uint256`. A gene can have up to 32 chromossomes, and a chromossome can have a value between 0 and 255.
+This repo provide a basic exemple of how to simulate genes and breed, and it also provides a benchmark of how much gas it costs to generate a gene and to breed.
 
-If you use that to represent an nft with many traits, evety trait is a chromossome and the value of the chromossome is the trait variant.
+In the examples provided, a gene is an `uint256`, and it is composed by chromossomes. Every chromossome is represented by a `byte` in the `uint256`, so a gene can have up to 32 chromossomes, and every chromossome has a value between 0 and 255.
+
+To make it easier to visualise, an `uint256` represented in its hexadecimal form looks like this:
+
+```
+1 byte (or 1 chromossome) with the value of 255
+0xFF
+
+2 bytes (or 2 chromossomes) with the values of 255 and 1
+0xFF01
+
+Gene with 7 chromossomes
+0x11111111111111
+
+Gene with 32 chromossomes
+0x1111111111111111111111111111111111111111111111111111111111111111
+```
 
 ### Mutation of Genes
 
-TBD
+Mutation is when you modify chromossomes of a gene.
+
+#### Single Point Mutation
+
+Single point mutation is when a single chromossome is mutated in a gene. The table below shows the gas cost for mutating a chromossome in a specific position of the gene.
+
+We can observe that the position of the chromossome being mutated doesn't have a big impact in the gas cost.
+
+| Position | Gas |
+| -------- | --- |
+|    01    | 656 |
+|    02    | 657 |
+|    03    | 592 |
+|    04    | 635 |
+|    05    | 593 |
+|    06    | 637 |
+|    07    | 614 |
+|    08    | 635 |
+|    09    | 591 |
+|    10    | 614 |
+|    11    | 591 |
+|    12    | 593 |
+|    13    | 614 |
+|    14    | 614 |
+|    15    | 636 |
+|    16    | 612 |
+|    17    | 612 |
+|    18    | 592 |
+|    19    | 592 |
+|    20    | 658 |
+|    21    | 592 |
+|    22    | 614 |
+|    23    | 659 |
+|    24    | 657 |
+|    25    | 593 |
+|    26    | 635 |
+|    27    | 615 |
+|    28    | 612 |
+|    29    | 659 |
+|    30    | 655 |
+|    31    | 634 |
+|    32    | 657 |
 
 ### Cross-Over of Genes
 
