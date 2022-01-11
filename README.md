@@ -32,40 +32,40 @@ Single point mutation is when a single chromossome is mutated in a gene. The tab
 
 We can observe that the position of the chromossome being mutated doesn't have a big impact in the gas cost.
 
-| Position | Gas |
-| -------- | --- |
-|    01    | 656 |
-|    02    | 657 |
-|    03    | 592 |
-|    04    | 635 |
-|    05    | 593 |
-|    06    | 637 |
-|    07    | 614 |
-|    08    | 635 |
-|    09    | 591 |
-|    10    | 614 |
-|    11    | 591 |
-|    12    | 593 |
-|    13    | 614 |
-|    14    | 614 |
-|    15    | 636 |
-|    16    | 612 |
-|    17    | 612 |
-|    18    | 592 |
-|    19    | 592 |
-|    20    | 658 |
-|    21    | 592 |
-|    22    | 614 |
-|    23    | 659 |
-|    24    | 657 |
-|    25    | 593 |
-|    26    | 635 |
-|    27    | 615 |
-|    28    | 612 |
-|    29    | 659 |
-|    30    | 655 |
-|    31    | 634 |
-|    32    | 657 |
+| Chromossome Position | Gas Cost |
+| -------------------- | -------- |
+| 01                   | 656      |
+| 02                   | 657      |
+| 03                   | 592      |
+| 04                   | 635      |
+| 05                   | 593      |
+| 06                   | 637      |
+| 07                   | 614      |
+| 08                   | 635      |
+| 09                   | 591      |
+| 10                   | 614      |
+| 11                   | 591      |
+| 12                   | 593      |
+| 13                   | 614      |
+| 14                   | 614      |
+| 15                   | 636      |
+| 16                   | 612      |
+| 17                   | 612      |
+| 18                   | 592      |
+| 19                   | 592      |
+| 20                   | 658      |
+| 21                   | 592      |
+| 22                   | 614      |
+| 23                   | 659      |
+| 24                   | 657      |
+| 25                   | 593      |
+| 26                   | 635      |
+| 27                   | 615      |
+| 28                   | 612      |
+| 29                   | 659      |
+| 30                   | 655      |
+| 31                   | 634      |
+| 32                   | 657      |
 
 ### Cross-Over of Genes
 
@@ -79,45 +79,84 @@ One point cross-over is when you pick the head of one gene, and the tail of the 
 
 ![One Point Cross-Over](https://www.tutorialspoint.com/genetic_algorithms/images/one_point_crossover.jpg)
 
+The table below shows the gas cost for using one-point cross over in a specific point of the gene.
+
 We can observer that for the algorithm used here, the gas cost goes up as the point goes more to the left. Accepting PRs for upgrades on that!
 
-| Point | Gas  |
-| ----- | ---- |
-|  01   | 590  |
-|  02   | 612  |
-|  03   | 701  |
-|  04   | 770  |
-|  05   | 880  |
-|  06   | 924  |
-|  07   | 947  |
-|  08   | 1056 |
-|  09   | 1080 |
-|  10   | 1215 |
-|  11   | 1215 |
-|  12   | 1304 |
-|  13   | 1351 |
-|  14   | 1461 |
-|  15   | 1486 |
-|  16   | 1594 |
-|  17   | 1660 |
-|  18   | 1706 |
-|  19   | 1750 |
-|  20   | 1819 |
-|  21   | 1952 |
-|  22   | 2018 |
-|  23   | 2020 |
-|  24   | 2153 |
-|  25   | 2218 |
-|  26   | 2264 |
-|  27   | 2288 |
-|  28   | 2399 |
-|  29   | 2443 |
-|  30   | 2489 |
-|  31   | 2577 |
-|  32   | 2669 |
-
+| Point in Gene | Gas Cost |
+| ------------- | -------- |
+| 01            | 590      |
+| 02            | 612      |
+| 03            | 701      |
+| 04            | 770      |
+| 05            | 880      |
+| 06            | 924      |
+| 07            | 947      |
+| 08            | 1056     |
+| 09            | 1080     |
+| 10            | 1215     |
+| 11            | 1215     |
+| 12            | 1304     |
+| 13            | 1351     |
+| 14            | 1461     |
+| 15            | 1486     |
+| 16            | 1594     |
+| 17            | 1660     |
+| 18            | 1706     |
+| 19            | 1750     |
+| 20            | 1819     |
+| 21            | 1952     |
+| 22            | 2018     |
+| 23            | 2020     |
+| 24            | 2153     |
+| 25            | 2218     |
+| 26            | 2264     |
+| 27            | 2288     |
+| 28            | 2399     |
+| 29            | 2443     |
+| 30            | 2489     |
+| 31            | 2577     |
+| 32            | 2669     |
 
 #### Uniform Cross-Over
+
+Uniform cross over is when you walk through the chromossome positions and pick the chromossome in that position from either mom or dad.
+
+> Image from tutorialspoint.com
+![Uniform Cross-Over](https://www.tutorialspoint.com/genetic_algorithms/images/uniform_crossover.jpg)
+
+The table below shows the gas cost for uniform cross-over in genes with a specific number of chromossomes.
+
+| Number of Chromossomes | Gas Cost |
+| ---------------------- | -------- |
+| 04                     | 1024     |
+| 05                     | 1166     |
+| 06                     | 1349     |
+| 07                     | 1467     |
+| 08                     | 1562     |
+| 09                     | 1712     |
+| 10                     | 1887     |
+| 11                     | 1981     |
+| 12                     | 2167     |
+| 13                     | 2327     |
+| 14                     | 2402     |
+| 15                     | 2608     |
+| 16                     | 2726     |
+| 17                     | 2868     |
+| 18                     | 3007     |
+| 19                     | 3125     |
+| 21                     | 3449     |
+| 22                     | 3522     |
+| 23                     | 3663     |
+| 24                     | 3870     |
+| 25                     | 3987     |
+| 26                     | 4103     |
+| 27                     | 4245     |
+| 28                     | 4429     |
+| 29                     | 4525     |
+| 30                     | 4686     |
+| 31                     | 4804     |
+| 32                     | 5087     |
 
 ### Gene Generation
 
