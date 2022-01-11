@@ -18,6 +18,8 @@ Gene with 7 chromossomes
 
 Gene with 32 chromossomes
 0x1111111111111111111111111111111111111111111111111111111111111111
+  ^^ chromossome 32         ^^ chromossome 19                   ^^ chromossome 1
+
 ```
 
 ### Mutation of Genes
@@ -67,7 +69,55 @@ We can observe that the position of the chromossome being mutated doesn't have a
 
 ### Cross-Over of Genes
 
-TBD
+Cross-over are operation that generates a new gene from two other genes.
+
+#### One Point Cross-Over
+
+One point cross-over is when you pick the head of one gene, and the tail of the other. The "point" is where you decide it's the end of the head and the begining of the tail.
+
+> Image from tutorialspoint.com
+
+![One Point Cross-Over](https://www.tutorialspoint.com/genetic_algorithms/images/one_point_crossover.jpg)
+
+We can observer that for the algorithm used here, the gas cost goes up as the point goes more to the left. Accepting PRs for upgrades on that!
+
+| Point | Gas  |
+| ----- | ---- |
+|  01   | 590  |
+|  02   | 612  |
+|  03   | 701  |
+|  04   | 770  |
+|  05   | 880  |
+|  06   | 924  |
+|  07   | 947  |
+|  08   | 1056 |
+|  09   | 1080 |
+|  10   | 1215 |
+|  11   | 1215 |
+|  12   | 1304 |
+|  13   | 1351 |
+|  14   | 1461 |
+|  15   | 1486 |
+|  16   | 1594 |
+|  17   | 1660 |
+|  18   | 1706 |
+|  19   | 1750 |
+|  20   | 1819 |
+|  21   | 1952 |
+|  22   | 2018 |
+|  23   | 2020 |
+|  24   | 2153 |
+|  25   | 2218 |
+|  26   | 2264 |
+|  27   | 2288 |
+|  28   | 2399 |
+|  29   | 2443 |
+|  30   | 2489 |
+|  31   | 2577 |
+|  32   | 2669 |
+
+
+#### Uniform Cross-Over
 
 ### Gene Generation
 
